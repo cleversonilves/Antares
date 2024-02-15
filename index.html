@@ -20,15 +20,22 @@
 <body>
     <header>
          <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+            <menu id="itens">
+            <ul>
+                <li><a href="https://wa.me/+5521965113627" target="_blank"><p>WhatsApp</p></a>
+                </li>
+
+            </ul>
+        </menu>
       <div class="logo"><img src="Imgs/logo.png" width="300"></div>
  
     </header>
    
     <div class="sociais">
-        <a href="http://" class="sm"><img src="Imgs/linkedin.png" class="sm" alt="Linkedin"></a>
-        <a href="http://" class="sm"><img src="Imgs/instagram.png" class="sm" alt="Instagram"></a>
-        <a href="http://" class="sm"><img src="Imgs/Twitter.png" class="sm" alt="Twitter"></a>
-        <a href="http://" class="sm"><img src="Imgs/tiktok.png" class="sm" alt="TikTok"></a>
+        <a href="https://www.linkedin.com/company/antares-corretora/" class="sm" target="_blank"><img src="Imgs/linkedin.png" class="sm" alt="Linkedin"></a>
+        <a href="https://www.instagram.com/antarescorret?igsh=dWdpOWt2Mmp1ZHUw" class="sm" target="_blank"><img src="Imgs/instagram.png" class="sm" alt="Instagram"></a>
+        <a href="https://x.com/corretortg?t=E9Tvgx7ITpUg368LaYwpDA&s=08" class="sm" target="_blank"><img src="Imgs/Twitter.png" class="sm" alt="Twitter"></a>
+        <a href="https://www.tiktok.com/@antarescorretora?_t=8juoiukbbiI&_r=1" class="sm" target="_blank"><img src="Imgs/tiktok.png" class="sm" alt="TikTok"></a>
       </div>
       <main>
       <h1> POR QUE O SEU PLANO DE SAÚDE É TÃO CARO?</h1>
@@ -56,6 +63,23 @@
     <footer>
         <p class="rodape">Todos os direitos reservados a Antares!</p>
     </footer>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    
+        function clickMenu() {
+            if (itens.style.display == "block") {
+            itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TB7KTZ9R"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
